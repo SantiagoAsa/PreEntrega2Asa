@@ -1,0 +1,1227 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid rgba(65, 65, 65, 0.2);
+  z-index: 1;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+}
+
+.logo_nav,
+.logo_menu {
+  width: 100%;
+  height: 100%;
+}
+
+.nav_horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.nav_horizontal li a {
+  display: block;
+  padding: 6px 12px;
+  color: rgb(65, 65, 65);
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav_vertical {
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 140px;
+  padding: 0;
+}
+
+.nav_horizontal li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.nav_horizontal li:hover .nav_vertical {
+  display: block;
+}
+
+.nav_horizontal li:hover {
+  background-color: rgb(128, 191, 228);
+  font-weight: bold;
+  border-radius: 8px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.nav_vertical li:hover {
+  background-color: rgb(128, 191, 228);
+}
+
+.nav_vertical li a {
+  display: block;
+  background-color: rgba(190, 190, 190, 0.9);
+  padding: 10px 15px 10px 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav_vertical li a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(128, 191, 228);
+  font-weight: bold;
+}
+
+/** main **/
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+/** hero - h1 - h2 **/
+
+.escudo {
+  width: 100%;
+  display: block;
+}
+
+.hero h1 {
+  font-family: garamond;
+  text-transform: uppercase;
+  display: block;
+  font-size: 70px;
+  color: rgb(45, 45, 86);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 40px 20px 0 20px;
+  font-weight: bold;
+}
+
+.hero h2 {
+  font-family: garamond;
+  font-style: italic;
+  display: block;
+  font-size: 50px;
+  padding: 10px;
+  color: rgb(128, 191, 228);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+/** imagenes **/
+
+.img_container {
+  width: 100%;
+  padding: 50px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img_container img {
+  width: 270px;
+  border: 2px solid rgb(185, 185, 185);
+  border-radius: 20px;
+  margin: 10px 20px;
+}
+
+/** noticias y novedades - twitter **/
+
+.news {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+  gap: 10px;
+}
+
+.novedades,
+.twitter {
+  width: 600px;
+  height: 750px;
+  justify-content: center;
+  padding: 0 30px 30px 30px;
+  overflow: scroll;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 10px;
+  margin: 0 40px;
+}
+
+.twitter {
+  padding: 0;
+}
+
+.novedades h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid gray;
+}
+
+.novedades h4 {
+  color: #5597d8;
+  font-size: 25px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.twitter_timeline,
+.twitter-timeline {
+  width: 100%;
+  height: 100%;
+}
+
+.news_p {
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+/** sponsors **/
+
+.sponsors {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  margin-bottom: 100px;
+}
+
+.sponsors_title {
+  width: 100%;
+  margin: 50px 0 30px 0;
+}
+
+.sponsors_title h3 {
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+  border-bottom: none;
+  padding: 0 20px;
+}
+
+.sponsors_content {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.img_sponsor {
+  display: inline-block;
+  width: 150px;
+  border-radius: 60px;
+  padding: 10px 20px;
+}
+
+/** footer **/
+
+footer {
+  width: 100%;
+  height: 100%;
+  background-color: #303030;
+  text-align: center;
+}
+
+.footer_logo {
+  display: block;
+  width: 120px;
+  margin: 0 auto;
+}
+
+.footer_list {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footerList1 {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer_link a {
+  color: rgb(200, 200, 200);
+  text-decoration: none;
+}
+
+.footer_link a:hover {
+  color: #3ec2ff;
+  transition: 0.2s;
+  text-shadow: 0 0 5px #3ec2ff;
+}
+
+.datos {
+  width: 100%;
+  margin-top: 50px;
+  color: rgb(200, 200, 200);
+  font-size: 15px;
+  text-align: center;
+}
+
+.newslatter_div {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 30px auto;
+}
+
+.newslatter_div h5 {
+  color: rgb(200, 200, 200);
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.email {
+  color: rgb(200, 200, 200);
+  font-size: 20px;
+}
+
+.icons {
+  width: 100%;
+  height: 50px;
+}
+
+.media_icon {
+  width: 30px;
+}
+
+/** contacto.html **/
+
+.contact_main {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100px;
+}
+
+.hero_contact {
+  width: 100%;
+}
+
+.hero_contact img {
+  width: 100%;
+}
+
+.form {
+  width: 500px;
+  background: #5597d8;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+}
+
+.form_title {
+  text-align: center;
+  font-size: 27px;
+  padding-bottom: 20px;
+}
+
+.input {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 0px;
+  border: 1px solid rgb(33, 33, 54);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+}
+
+.submit {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.form p {
+  font-size: 12px;
+  color: rgb(66, 66, 66);
+  text-align: justify;
+}
+
+/** historia.html **/
+
+.historia {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 100px;
+  display: inline-block;
+}
+
+.hero_historia {
+  width: 100%;
+}
+
+.hero_historia img {
+  width: 100%;
+}
+
+.historia h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 60px;
+  margin-top: 100px;
+}
+
+.sec_historia {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.cont_p {
+  width: 585px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 20px;
+  vertical-align: top;
+}
+
+.cont_p p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.cont_i {
+  width: 400px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.predio {
+  width: 100%;
+  margin-left: 15px;
+  border-radius: 15px;
+  border: 2px solid rgba(65, 65, 65, 0.5);
+}
+
+.amigos {
+  width: 100%;
+  margin-right: 15px;
+  border-radius: 15px;
+  border: 2px solid rgb(65, 65, 65, 0.5);
+}
+
+.div_contp {
+  display: block;
+  width: 1000px;
+  font-size: 20px;
+  margin: auto;
+  text-align: justify;
+}
+
+.div_contp p {
+  margin-bottom: 40px;
+}
+
+.historia h2 {
+  font-size: 30px;
+  color: black;
+  text-transform: uppercase;
+  font-style: normal;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+
+.frame_hisotira {
+  margin-bottom: 100px;
+}
+
+.lanueva {
+  width: 800px;
+  height: 2000px;
+}
+
+/** comision.html **/
+
+.hero_comision {
+  width: 100%;
+}
+
+.hero_comision img {
+  width: 100%;
+}
+
+.comision {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.comision img {
+  width: 250px;
+  margin: 0 20px;
+}
+
+/** basquet.html **/
+
+.hero_basquet {
+  width: 100%;
+}
+
+.hero_basquet img {
+  width: 100%;
+}
+
+.main_container {
+  background-color: #ffffff;
+  padding-bottom: 20px;
+}
+
+.container_basquet {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 80%;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+.section_basquet {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.section_basquet p {
+  font-size: 25px;
+  padding: 25px;
+  margin: 0;
+  background-color: #424242;
+  color: rgb(200, 200, 200);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.slider_basquet {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  gap: 20px;
+  padding: 5px;
+}
+
+.slider_basquet img {
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  position: relative;
+  transition: all 400ms;
+}
+
+.slider_basquet img:hover {
+  transform: scale(1.1);
+}
+
+.article_horario_basquet {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  padding: 5px;
+}
+
+.article_horario_basquet h2 {
+  font-size: 40px;
+  padding: 20px;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 10px;
+  color: rgb(200, 200, 200);
+  background-color: #424242;
+}
+
+.horario {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 100%;
+  gap: 20px;
+  padding: 5px;
+}
+
+.horario article {
+  background-color: #424242;
+  height: 100%;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.horario article p {
+  font-size: 20px;
+  color: rgb(200, 200, 200);
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.horario article p span {
+  color: #3ec2ff;
+  font-weight: bold;
+}
+
+.horario article:hover p span {
+  text-shadow: 0 0 10px #3ec2ff;
+}
+
+/** softbol.html **/
+
+.hero_softbol {
+  width: 100%;
+}
+
+.hero_softbol img {
+  width: 100%;
+}
+
+.description_softbol {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.description_softbol p {
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+
+.wbsc {
+  font-weight: bold;
+}
+
+.softbol_section {
+  width: 100%;
+  height: 1500px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.img_softbol {
+  display: inline-block;
+  width: 10px;
+}
+
+.slider_softbol {
+  width: 100%;
+  padding: 100px;
+  text-align: center;
+}
+
+.slider_softbol img {
+  display: inline-block;
+  width: 270px;
+  height: 350px;
+  border: 2px solid rgb(185, 185, 185);
+  border-radius: 60px;
+}
+
+.img_sliderSoftbol {
+  margin: 10px 20px;
+  object-fit: cover;
+}
+
+.article_horario_softbol {
+  text-align: center;
+  font-size: 20px;
+}
+
+.lista_softbol {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.lista_softbol h3 {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.spoty_softbol {
+  width: 700px;
+}
+
+/** rugby.html **/
+
+.hero_rugby {
+  width: 100%;
+}
+
+.hero_rugby img {
+  width: 100%;
+}
+
+.description_rugby {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.description_rugby p {
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+
+.rugby_section {
+  width: 100%;
+  height: 1500px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.img_rugby {
+  display: inline-block;
+  width: 10px;
+}
+
+.slider_rugby {
+  width: 100%;
+  padding: 100px;
+  text-align: center;
+}
+
+.slider_rugby img {
+  display: inline-block;
+  width: 270px;
+  height: 350px;
+  border: 2px solid rgb(185, 185, 185);
+  border-radius: 60px;
+}
+
+.img_sliderRugby {
+  margin: 10px 20px;
+  object-fit: cover;
+}
+
+.article_horario_rugby {
+  text-align: center;
+  font-size: 20px;
+}
+
+.video_rugby {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.video_rugby h3 {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.youtube_rugby {
+  width: 700px;
+}
+
+/** hockey.html **/
+
+.hero_hockey {
+  width: 100%;
+}
+
+.hero_hockey img {
+  width: 100%;
+}
+
+.description_hockey {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.description_hockey p {
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+
+.hockey_section {
+  width: 100%;
+  height: 1500px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.img_hockey {
+  display: inline-block;
+  width: 10px;
+}
+
+.slider_hockey {
+  width: 100%;
+  padding: 100px;
+  text-align: center;
+}
+
+.slider_hockey img {
+  display: inline-block;
+  width: 270px;
+  height: 350px;
+  border: 2px solid rgb(185, 185, 185);
+  border-radius: 60px;
+}
+
+.img_sliderHockey {
+  margin: 10px 20px;
+  object-fit: cover;
+}
+
+.article_horario_hockey {
+  text-align: center;
+  font-size: 20px;
+}
+
+.insta_hockey {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.insta_hockey h3 {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.instagram_hockey {
+  width: 700px;
+}
+
+/** instalaciones **/
+
+.instalaciones_slider {
+  width: 30%;
+  margin: 100px auto;
+}
+
+/** responsive **/
+
+@media (max-width: 1400px) {
+  .section_basquet p {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .slider_basquet {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .slider_basquet img:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .slider_basquet img:hover {
+    transform: scale(1.1);
+  }
+
+  .horario {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1023px) {
+  header {
+    height: 80px;
+  }
+  .logo {
+    width: 54px;
+    height: 54px;
+  }
+  .nav_horizontal li a {
+    font-size: 15px;
+  }
+  .navbar {
+    width: 90px;
+  }
+  .button-text {
+    font-size: 18px;
+  }
+  .container-fluid button {
+    padding: 4px 6px;
+  }
+  .hero h1 {
+    font-size: 50px;
+  }
+  .hero h2 {
+    font-size: 35px;
+  }
+
+  .news {
+    flex-direction: column;
+    align-items: center;
+  }
+  .novedades {
+    width: 80%;
+    padding: 0 20px 20px 20px;
+    margin: 10 15px;
+  }
+
+  .twitter {
+    width: 80%;
+    margin: 10 15px;
+  }
+  .twitter_timeline {
+    width: 100%;
+  }
+
+  .sponsors_title h3 {
+    font-size: 30px;
+  }
+  .sponsors_content {
+    padding: 0 80px;
+  }
+  .img_sponsor {
+    width: 130px;
+  }
+  .footerList1 {
+    gap: 10px;
+    font-size: 15px;
+  }
+  .datos p {
+    font-size: 14px;
+  }
+  .newslatter_div h5 {
+    font-size: 15px;
+  }
+  .newslatter_div label {
+    font-size: 14px;
+  }
+  .slider_basquet img:hover {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+  }
+  .logo,
+  .navbar {
+    order: -1;
+  }
+  .logo {
+    justify-self: start;
+    margin-left: 42px;
+  }
+  .navbar {
+    justify-self: end;
+    margin-right: 30px;
+  }
+  .nav {
+    grid-column-start: 1;
+    grid-column-end: end;
+    justify-self: center;
+    padding: 10px 0;
+  }
+  .nav_horizontal li a {
+    padding: 6px 8px;
+    font-size: 13px;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .news {
+    flex-direction: column;
+    align-items: center;
+  }
+  .novedades {
+    width: 80%;
+    padding: 0 20px 20px 20px;
+    margin: 10 15px;
+  }
+
+  .novedades h3 {
+    font-size: 25px;
+  }
+
+  .novedades h4 {
+    font-size: 20px;
+  }
+
+  .twitter {
+    width: 80%;
+    margin: 10 15px;
+  }
+  .twitter_timeline {
+    width: 100%;
+  }
+
+  .sponsors_title h3 {
+    font-size: 24px;
+  }
+  .sponsors_content {
+    padding: 0 50px;
+  }
+  .img_sponsor {
+    width: 115px;
+    padding: 8px 16px;
+  }
+  .footerList1 {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+  }
+  .section_basquet p {
+    font-size: 18px;
+    padding: 16px;
+  }
+
+  .slider_basquet {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .slider_basquet img:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .slider_basquet img:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: -2;
+  }
+  .slider_basquet img:hover {
+    transform: scale(1);
+  }
+
+  .article_horario_basquet h2 {
+    font-size: 30px;
+  }
+
+  .horario article p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 650px) {
+  .section_basquet p {
+    font-size: 16px;
+  }
+
+  .horario article p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 599px) {
+  .section_basquet p {
+    font-size: 15px;
+  }
+
+  .horario {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    position: relative;
+  }
+  .logo,
+  .navbar {
+    order: -1;
+  }
+  .logo {
+    justify-self: start;
+    margin-left: 42px;
+  }
+  .navbar {
+    justify-self: end;
+    margin-right: 30px;
+  }
+  .nav {
+    width: 100%;
+  }
+  .nav_horizontal {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .nav_horizontal li:hover {
+    border-radius: 0;
+  }
+  .nav_vertical li a {
+    border-radius: 0;
+  }
+  .nav_vertical li:hover {
+    border-radius: 0;
+  }
+  .nav_horizontal li a {
+    font-size: 20px;
+  }
+  .nav_vertical {
+    position: relative;
+    width: 100%;
+    left: 0;
+  }
+  .hero img {
+    display: none;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+  .hero h2 {
+    font-size: 23px;
+  }
+  .img_container {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .img_container img {
+    width: 80%;
+  }
+  .novedades,
+  .twitter {
+    width: 80%;
+    padding: 0 5px 5px 5px;
+    margin: 0 auto;
+  }
+  .sponsors_title h3 {
+    font-size: 20px;
+  }
+  .sponsors_content {
+    padding: 50px;
+  }
+  .sponsors_content {
+    padding: 0 35px;
+  }
+  .img_sponsor {
+    width: 100px;
+    padding: 6px 12px;
+  }
+  .hero_basquet {
+    display: none;
+  }
+  .container_basquet {
+    gap: 5px;
+    margin: 50px auto;
+  }
+  .section_basquet {
+    padding: 0;
+  }
+  .section_basquet p {
+    font-size: 14px;
+  }
+  .slider_basquet {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 0;
+  }
+  .article_horario_basquet {
+    padding: 0;
+  }
+  .article_horario_basquet h2 {
+    font-size: 25px;
+  }
+  .horario {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 300px) {
+  .nav ul li a {
+    font-size: 15px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+  .hero h2 {
+    font-size: 20px;
+  }
+
+  .img_container {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .img_container img {
+    width: 80%;
+  }
+  .novedades,
+  .twitter {
+    width: 80%;
+    padding: 0 5px 5px 5px;
+    margin: 0 auto;
+  }
+  .sponsors_title h3 {
+    font-size: 16px;
+  }
+  .sponsors_content {
+    padding: 0 20px;
+  }
+  .img_sponsor {
+    width: 100px;
+    padding: 5px 10px;
+  }
+}
