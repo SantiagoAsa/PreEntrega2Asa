@@ -775,10 +775,8 @@ footer {
 }
 
 .video_rugby {
-  width: 100%;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  text-align: center;
+  width: 80%;
+  margin: 100px auto;
 }
 
 .video_rugby h3 {
@@ -788,7 +786,7 @@ footer {
 }
 
 .youtube_rugby {
-  width: 700px;
+  width: 100%;
 }
 
 /** hockey.html **/
@@ -852,10 +850,8 @@ footer {
 }
 
 .insta_hockey {
-  width: 100%;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  text-align: center;
+  width: 80%;
+  margin: 100px auto;
 }
 
 .insta_hockey h3 {
@@ -864,8 +860,8 @@ footer {
   padding-bottom: 20px;
 }
 
-.instagram_hockey {
-  width: 700px;
+.youtube_hockey {
+  width: 100%;
 }
 
 /** instalaciones **/
