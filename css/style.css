@@ -471,16 +471,50 @@ footer {
 }
 
 .comision {
-  width: 70%;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  width: 90%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
 }
 
 .comision img {
-  width: 250px;
-  margin: 0 20px;
+  height: 250px;
+  object-fit: scale-down;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.span_nombre {
+  display: block;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #3ec2ff;
+  font-weight: bold;
+}
+
+.span_puesto {
+  display: block;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #32317e;
+  font-weight: bold;
+}
+
+.span_nro {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #32317e;
+}
+.card:hover .span_nombre {
+  color: #3ec2ff;
+  text-shadow: 0 0 2px #3ec2ff;
 }
 
 /** basquet.html **/
@@ -836,8 +870,28 @@ footer {
 
 /** instalaciones **/
 
-.instalaciones_slider {
-  width: 30%;
+.hero_instalaciones {
+  width: 100%;
+}
+
+.hero_instalaciones img {
+  width: 100%;
+}
+
+.description_instalaciones {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.description_instalaciones p {
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+
+.slider_instalaciones {
+  width: 60%;
   margin: 100px auto;
 }
 
@@ -848,20 +902,16 @@ footer {
     font-size: 20px;
     padding: 20px;
   }
-
   .slider_basquet {
     grid-template-columns: repeat(3, 1fr);
   }
-
   .slider_basquet img:nth-child(4) {
     grid-column-start: 1;
     grid-column-end: 3;
   }
-
   .slider_basquet img:hover {
     transform: scale(1.1);
   }
-
   .horario {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -898,6 +948,15 @@ footer {
   }
   .slider_softbol {
     padding: 100px 80px;
+  }
+  .description_instalaciones {
+    width: 80%;
+  }
+  .description_instalaciones p {
+    font-size: 25px;
+  }
+  .slider_instalaciones {
+    width: 80%;
   }
 }
 
@@ -1010,6 +1069,9 @@ footer {
   .article_horario_softbol p {
     font-size: 18px;
   }
+  .description_instalaciones p {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 801px) {
@@ -1087,7 +1149,6 @@ footer {
   .hero h2 {
     font-size: 28px;
   }
-
   .news {
     flex-direction: column;
     align-items: center;
@@ -1097,15 +1158,12 @@ footer {
     padding: 0 20px 20px 20px;
     margin: 10 15px;
   }
-
   .novedades h3 {
     font-size: 25px;
   }
-
   .novedades h4 {
     font-size: 20px;
   }
-
   .twitter {
     width: 80%;
     margin: 10 15px;
@@ -1113,7 +1171,6 @@ footer {
   .twitter_timeline {
     width: 100%;
   }
-
   .sponsors_title h3 {
     font-size: 24px;
   }
@@ -1133,17 +1190,14 @@ footer {
     font-size: 18px;
     padding: 16px;
   }
-
   .slider_basquet {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
-
   .slider_basquet img:nth-child(3) {
     grid-column-start: 1;
     grid-column-end: -1;
   }
-
   .slider_basquet img:nth-child(4) {
     grid-column-start: 1;
     grid-column-end: -2;
@@ -1151,7 +1205,6 @@ footer {
   .slider_basquet img:hover {
     transform: scale(1);
   }
-
   .article_horario_basquet h2 {
     font-size: 30px;
   }
@@ -1164,13 +1217,24 @@ footer {
   .historia h2 {
     font-size: 20px;
   }
+  .comision img {
+    height: 200px;
+  }
+  .span_nombre {
+    font-size: 18px;
+  }
+  .span_puesto {
+    font-size: 16px;
+  }
+  .span_nro {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 650px) {
   .section_basquet p {
     font-size: 16px;
   }
-
   .horario article p {
     font-size: 13px;
   }
@@ -1186,13 +1250,15 @@ footer {
   .description_softbol p {
     font-size: 18px;
   }
+  .description_instalaciones p {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 599px) {
   .section_basquet p {
     font-size: 15px;
   }
-
   .horario {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1373,27 +1439,36 @@ footer {
   .article_horario_softbol p {
     font-size: 14px;
   }
+  .hero_instalaciones {
+    display: none;
+  }
+  .description_instalaciones {
+    margin: 50px auto;
+  }
+  .description_instalaciones p {
+    font-size: 16px;
+  }
+  .slider_instalaciones {
+    width: 95%;
+  }
 }
 
 @media (max-width: 300px) {
   .nav ul li a {
     font-size: 15px;
   }
-
   .hero h1 {
     font-size: 28px;
   }
   .hero h2 {
     font-size: 20px;
   }
-
   .img_container {
     flex-direction: column;
     text-align: center;
     margin: 0 auto;
     padding: 0;
   }
-
   .img_container img {
     width: 80%;
   }
